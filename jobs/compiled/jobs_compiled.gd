@@ -1,6 +1,6 @@
 class JobsAbstract:
-	var craftsman = load("res://jobs/craftsman.gd")
-	var combat = load("res://jobs/combat.gd")
+	var craftsman = load("res://jobs/jobsInstances/craftsman.gd")
+	var combat = load("res://jobs/jobsInstances/combat.gd")
 
 	func get_compiled() -> Array:
 		return [ 
