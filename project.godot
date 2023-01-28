@@ -1,0 +1,52 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "CharacterStats",
+"language": "GDScript",
+"path": "res://character_stats.gd"
+}, {
+"base": "Node",
+"class": "Role",
+"language": "GDScript",
+"path": "res://roles.gd"
+}, {
+"base": "Node",
+"class": "Trait",
+"language": "GDScript",
+"path": "res://trait.gd"
+} ]
+_global_script_class_icons={
+"CharacterStats": "",
+"Role": "",
+"Trait": ""
+}
+
+[application]
+
+config/name="Characters_System"
+config/icon="res://icon.png"
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[mono]
+
+project/assembly_name="Characters_System"
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
