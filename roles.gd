@@ -16,8 +16,6 @@ func _init() -> void:
 	var job_idx = randi() % jobs.size()
 	var sub_job_idx = randi() % jobs[job_idx].sub.size()
 
-	print(job_idx, sub_job_idx)
-
 	var job_at_idx = jobs[job_idx]
 	var sub_at_idx = jobs[job_idx].sub[sub_job_idx]
 
@@ -26,6 +24,6 @@ func _init() -> void:
 
 	my_role[job.get_job_name()] = job
 	my_role[sub.get_job_name()] = sub
-
-	print(my_role)
 	
+func get_my_roles() -> Dictionary:
+	return my_role
